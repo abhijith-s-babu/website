@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Finaad</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+
+#s_button
+{
+	width: 200px;
+	height: 40px;
+	background-color:#00aaff;
+	border-radius:5px;
+	border:none;
+}
+input[type = text],textarea{
+border: 1px solid blue;
+border-radius:5px;
+}
+#top{
+	width:100%;
+	background-color:#fefeff;
+}
+
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+
+.flip-card {
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  border-radius:20px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height:100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius:20px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #00f0ff;
+  color: black;
+  padding:25%;
+  border-radius:20px;
+}
+
+.flip-card-back {
+  background-color: blue;
+  color: white;
+  padding:22%;
+  transform: rotateY(180deg);
+  border-radius:20px;
+}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Finaad</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Why Us</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">We Work With</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Finaad</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+  <div id = "top">
+    <h1 class="w3-bar-item" align = "center"><b>Stress free your bookkeeping work engaging FINAAD bookkeeping services </b></h1>
+    </div>
+	<h1 class="w3-xxxlarge w3-text-blue"><b>About</b></h1>
+    <hr style="width:50px;border:5px solid #12a8ff" class="w3-round">  
+    <p>As a local bookkeeping business in Canberra we offer reliable and consistent customer service and will ensure all your Bookkeeping data entry is captured in a timely and accurate manner. We believe in regular reporting on the financial health of your business to help keep it on track. We have been providing services since 2014.</p>
+<p>As we are registered BAS agents and Accountant, we are able to manage, lodge and track all your tax, payroll and superannuation obligations from start to finish.</p>
+<p>Finaad Bookkeeping Canberra specializes in MYOB, XERO & QuickBook Online software. Whether your business requires full set up of the chart of accounts, Accounting system change, general data entry, other administration work such as selection of staff data base, general human resources duties or training to your staffs, we are the company to assist and can fit all of your bookkeeping needs.
+ </p>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Services.</b></h1>
+    <hr style="width:50px;border:5px solid #12a8ff" class="w3-round">
+    <h2 style = "color:#2180b3;">A.	Bookkeeping:</h2>
+
+<p>Bookkeeping includes preparation of organization's accounts, known as the general ledger, records all transactions and post debits (costs) and credits (income) and also produce financial statements and other reports for Accountants.</p>
+
+<p>Traditional accounting engagements, like maintaining weekly, monthly and yearly financial records, a general ledger, accounts payable and accounts receivable, business taxes, bank reconciliation, consulting etc.</p>
+
+<ul style = "display:block;list-style-type:disc;">
+<li>BAS/IAS returns and payroll tax lodgement</li>
+<li>Data entry </li>
+<li>Reconciliations and journal entries</li> 
+<li>Banking </li>
+<li>Archiving</li>
+<li>Trust account receipts and payments</li>
+<li>NDIS payments</li>
+<li>Funding Aquittal</li>
+</ul>
+<h2 style = "color:#2180b3;">B.	Tax related:</h2>
+<ul style = "display:block;list-style-type:disc;">
+<li>Preparation of Business Activity Statement (BAS) and update regularly</li>
+<li>Reconciliation of Superannuation payments and timely submitted to Superannuation fund.</li>
+<li>Follow up with staff for verification of superannuation fund with their fund account.</li>
+<li>Calculation of Payroll tax and timely submission.</li>
+<li>Calculation Job keeper, Job Maker payments and submission to ATO on time.</li>
+</ul>
+<h2 style = "color:#2180b3;">C.	Income Tax related:</h2>
+<ul style = "display:block;list-style-type:disc;">
+<li>Liaison with Accountant to prepare company tax and individual tax.</li>
+</ul>
+<h2 style = "color:#2180b3;">D.	Payroll:</h2>
+<ul style = "display:block;list-style-type:disc;">
+<li>Payroll processing, including an understanding of NES, Awards, LSL etc</li>
+<li>EOY processes including generating Payment Summaries and Contractor payment reports as required by ATO</li>
+<li>End to end payroll processing</li>
+<li>Month end procedures and reporting</li>
+<li>Preparing and lodgement of BAS, Payroll Tax, PAYG and other statutory tax requirements</li> 
+<li>Superannuation payment through clearing house</li>
+</ul>
+<h2 style = "color:#2180b3;">E.	Accounts Receivables/Payables:</h2>
+
+<ul style = "display:block;list-style-type:none;">
+<li>
+<h3 style = "color:#21a0b3;">a.	Accounts receivable work:</h3>
+<ul style = "display:block;list-style-type:disc;">
+<li>Receive invoices from business owner or the person who create and send it to client.</li> 
+<li>Following up of overdue invoices.</li>
+<li>Investigating and resolving issues regarding invoices if any.</li>
+<li>Reconciliation of customer accounts.</li>
+<li>Processing and matching with payments as well as bank statements.</li>
+</ul>
+</li>
+<li>
+<h3 style = "color:#21a0b3;">b.	Invoicing work:</h3>
+<ul style = "display:block;list-style-type:disc;">
+<li>Create invoices in the system.</li>
+<li>Reconcile invoices with sale team</li>
+ </ul></li>
+ <li>
+<h3 style = "color:#21a0b3;">c.	Accounts payable:</h3>
+<ul style = "display:block;list-style-type:disc;">
+<li>Match creditor invoices to delivery dockets.</li>
+<li>Ensure accurate and timely entry of creditor invoices into the Accounting System.</li>
+<li>Communicate with suppliers via telephone and e-mail to investigate and resolve any issues regarding payment of invoices.</li>
+<li>Reconciliation of supplier statements and filing of creditor invoices and payments.</li>
+</ul></li>
+</ul>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Why Choose Us</b></h1>
+    <hr style="width:50px;border:5px solid #12a8ff" class="w3-round">
+   
+   
+   
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-container"><div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2>Affordable</h2>
+    </div>
+    <div class="flip-card-back">
+      <h4>We offer very reasonable rate based on your weekly, monthly, quarterly and yearly bookkeeping services.</h4>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-container"><div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2>Offsite/<br><br>Onsite</h2>
+    </div>
+    <div class="flip-card-back"> 
+      <h4>We are very flexible, we can work offline (from our office) or we can to come to your office and work.</h4>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-container"><div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2>Satisfaction</h2>
+    </div>
+    <div class="flip-card-back">
+      <h4>We believe on client satisfaction and all our  clients are based on recommendation from other client</h4> 
+
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-container"><div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2>Qualified</h2>
+    </div>
+    <div class="flip-card-back">
+      <h4>We are qualified Bookkeeper and Accountant with IPA & ICB professional affiliations.</h4>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-container"><div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2>Flexible</h2>
+    </div>
+    <div class="flip-card-back"> 
+      <h4>We don’t hook up client with contract or initial fee, we believe in satisfaction</h4>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-container"><div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2>Convenient</h2>
+    </div>
+    <div class="flip-card-back">
+      <h4>We can give you a package of bookkeeping and accounting service so that you can relax at year end.</h4> 
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>We Work With</b></h1>
+    <hr style="width:50px;border:5px solid #12a8ff" class="w3-round">
+    
+	
+	
+	
+	
+  
+
+
+<!-- End page content -->
+</div>
+
+
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="contact">
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <h1 style = "color:#2180b3;" >Contact us</h1>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input " type="text" placeholder="*Your Full Name" name="Name" required></p>
+          <p><input class="w3-input " type="text" placeholder="Company" name="Company"></p>
+          <p><input class="w3-input " type="text" placeholder="*Email" name="Email" required></p>
+          <p><input class="w3-input " type="text" placeholder="*Contact Number" name="Contact" required></p>
+          <p><textarea class="w3-input" type="text" placeholder="Message" name="Message" required/></textarea></p>
+          <button id = "s_button" type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="w3-half">
+		<br><br><br><br>
+        <h3>Phone: 0415294 559</h3>
+		<h3>Email: info@finaad.com.au</h3>
+		<h3>Website: www.finaad.com.au</h3>
+      </div>
+    </div>
+  </footer>
+
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
